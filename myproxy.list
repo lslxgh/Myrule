@@ -11,7 +11,7 @@
 DOMAIN-SUFFIX,easy2023.com
 DOMAIN-SUFFIX,easyint.net
 DOMAIN-SUFFIX,cloudflare.com
-DOMAIN-SUFFIX,dash.xns.one
 DOMAIN-KEYWORD,skyboard
 DOMAIN-KEYWORD,docker
 IP-CIDR,103.143.81.71/8
+DOMAIN,dash.xns.one
