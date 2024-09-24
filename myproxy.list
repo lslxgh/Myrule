@@ -1,4 +1,13 @@
 # 内容：专属定制代理
+##- PROCESS-NAME,curl #匹配路由自身进程(curl进程)
+##- DOMAIN-SUFFIX,google.com #匹配域名后缀
+##- DOMAIN-KEYWORD,google #匹配域名关键字
+##- DOMAIN,google.com #匹配域名
+##- DOMAIN-SUFFIX,ad.com #匹配域名后缀
+##- IP-CIDR,127.0.0.0/8 #匹配数据目标IP
+##- SRC-IP-CIDR,192.168.1.201/32 #匹配数据发起IP
+##- DST-PORT,80 #匹配数据目标端口
+##- SRC-PORT,7777 #匹配数据源端口
 DOMAIN-SUFFIX,easy2023.com
 DOMAIN-SUFFIX,easyint.net
 DOMAIN-SUFFIX,cloudflare.com
