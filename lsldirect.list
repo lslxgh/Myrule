@@ -1,4 +1,4 @@
 # 内容：专属定制直连
-- DOMAIN-KEYWORD,test-ipv6
-- DOMAIN-KEYWORD,ipv6
-- DOMAIN,lb.jmwl.club
+DOMAIN-KEYWORD,test-ipv6
+DOMAIN-KEYWORD,ipv6
+DOMAIN,lb.jmwl.club
