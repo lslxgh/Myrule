@@ -5,4 +5,4 @@ DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-KEYWORD,skyboard
 DOMAIN-KEYWORD,docker
 IP-CIDR,103.143.81.71/8
-DOMAIN,dash.xns.one
+DOMAIN-SUFFIX,xns.one
