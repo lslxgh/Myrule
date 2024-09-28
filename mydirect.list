@@ -2,4 +2,4 @@
 DOMAIN-KEYWORD,test-ipv6
 DOMAIN-KEYWORD,ipv6
 DOMAIN,lb.jmwl.club
-DOMAIN,www.msftncsi.com
+DOMAIN-SUFFIX,msftncsi.com
