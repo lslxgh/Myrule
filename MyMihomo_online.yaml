@@ -50,8 +50,6 @@ ClassicalText: &ClassicalText {type: http, interval: 86400, behavior: classical,
 
 # 远程订阅组❗️注意：请提供您的机场订阅链接，每个链接一行，并为每个机场命名，末尾的[A]为每个节点添加机场名称前缀，可自定义。
 proxy-providers:
-  机场A: {<<: *PProviders, url: '机场订阅地址', override: {additional-prefix: '[A] '}}
-  机场B: {<<: *PProviders, url: '机场订阅地址', override: {additional-prefix: '[B] '}}
 
 # 全局配置
 port: 7890
@@ -112,7 +110,7 @@ sniffer:
   force-domain: # 强制嗅探 别乱加
     - '+.v2ex.com'
   skip-domain: # 忽略嗅探
-    - 'rule-set:cn_domain,private_domain'
+    - 'rule-set:cn_domain,private_domain,mydirect'
     - 'Mijia Cloud'
     - '+.push.apple.com'
     - '+.wechat.com'
@@ -308,8 +306,8 @@ dns:
   # 支持 UDP，TCP，DoT，DoH，DoQ
   # 这部分为主要 DNS 配置，影响所有直连，确保使用对大陆解析精准的 DNS
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - 211.138.245.180
+    - 211.138.240.100
 
   # 代理节点域名解析
   # 专用于节点域名解析的 DNS 服务器，非必要配置项
@@ -319,7 +317,7 @@ dns:
     
   # 覆盖DNS策略 举例
   nameserver-policy:
-    www.baidu.com: 114.114.114.114
+    www.baidu.com: 223.5.5.5
 
   # 使用系统 DNS true / false
   use-system-hosts: false
@@ -399,6 +397,12 @@ proxy-groups:
 
 # 远程规则集
 rule-providers: 
+  mydirect:
+    <<: *ClassicalText
+    url: https://raw.githubusercontent.com/lslxgh/rule/refs/heads/main/mydirect.list
+  myproxy:
+    <<: *ClassicalText
+    url: https://raw.githubusercontent.com/lslxgh/rule/refs/heads/main/myproxy.list
   fix-direct:
     <<: *ClassicalText
     url: https://mirror.ghproxy.com/https://github.com/666OS/YYDS/raw/main/mihomo/rules/fix-direct.list
@@ -542,6 +546,8 @@ rules:
   - OR,((DOMAIN,lcs-cops.adobe.io), (DOMAIN,photo.adobe.io)),DIRECT
   - DOMAIN-SUFFIX,adobe.io,REJECT
   # 规则集域名规则
+  - RULE-SET,mydirect,国内网站
+  - RULE-SET,myproxy,默认代理
   - RULE-SET,category-public-tracker,REJECT-DROP # 拒绝公共行为跟踪
   - RULE-SET,fix-direct,直连
   - RULE-SET,private_ip,国内网站,no-resolve
