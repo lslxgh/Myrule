@@ -1,9 +1,9 @@
-# 内容：专属定制代理
-DOMAIN-SUFFIX,easy2023.com
-DOMAIN-SUFFIX,easyint.net
-DOMAIN-SUFFIX,cloudflare.com
-DOMAIN-KEYWORD,skyboard
-DOMAIN-KEYWORD,docker
-DOMAIN-SUFFIX,xns.one
-DOMAIN-SUFFIX,ieee.org
-DOMAIN-SUFFIX,vsean.net
+payload:
+  - DOMAIN-SUFFIX,easy2023.com
+  - DOMAIN-SUFFIX,easyint.net
+  - DOMAIN-SUFFIX,cloudflare.com
+  - DOMAIN-KEYWORD,skyboard
+  - DOMAIN-KEYWORD,docker
+  - DOMAIN-SUFFIX,xns.one
+  - DOMAIN-SUFFIX,ieee.org
+  - DOMAIN-SUFFIX,vsean.net
