@@ -1,17 +1,17 @@
 # 内容：ntp服务器
-DOMAIN-KEYWORD,time
-DOMAIN-KEYWORD,time1
-DOMAIN-KEYWORD,time2
-DOMAIN-KEYWORD,time3
-DOMAIN-KEYWORD,time4
-DOMAIN-KEYWORD,time5
-DOMAIN-KEYWORD,time6
-DOMAIN-KEYWORD,time7
-DOMAIN-KEYWORD,ntp
-DOMAIN-KEYWORD,ntp1
-DOMAIN-KEYWORD,ntp2
-DOMAIN-KEYWORD,ntp3
-DOMAIN-KEYWORD,ntp4
-DOMAIN-KEYWORD,ntp5
-DOMAIN-KEYWORD,ntp6
-DOMAIN-KEYWORD,ntp7
+DOMAIN-KEYWORD,time,ip-version: ipv4
+DOMAIN-KEYWORD,time1,ip-version: ipv4
+DOMAIN-KEYWORD,time2,ip-version: ipv4
+DOMAIN-KEYWORD,time3,ip-version: ipv4
+DOMAIN-KEYWORD,time4,ip-version: ipv4
+DOMAIN-KEYWORD,time5,ip-version: ipv4
+DOMAIN-KEYWORD,time6,ip-version: ipv4
+DOMAIN-KEYWORD,time7,ip-version: ipv4
+DOMAIN-KEYWORD,ntp,ip-version: ipv4
+DOMAIN-KEYWORD,ntp1,ip-version: ipv4
+DOMAIN-KEYWORD,ntp2,ip-version: ipv4
+DOMAIN-KEYWORD,ntp3,ip-version: ipv4
+DOMAIN-KEYWORD,ntp4,ip-version: ipv4
+DOMAIN-KEYWORD,ntp5,ip-version: ipv4
+DOMAIN-KEYWORD,ntp6,ip-version: ipv4
+DOMAIN-KEYWORD,ntp7,ip-version: ipv4
