@@ -1,5 +1,5 @@
 DOMAIN-KEYWORD,coreldraw
 DOMAIN-KEYWORD,corel
-DOMAIN-KEYWORD,adobe
+# DOMAIN-KEYWORD,adobe
 DOMAIN,api.device.skysrt.com
 DOMAIN,compute-1.amazonaws.com
